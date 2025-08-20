@@ -1,7 +1,7 @@
 import sys
 sys.path.append('../')
 
-from preparacao_projeto.src.calculators.calculator_1 import Calculator1
+from src.calculators.calculator_1 import Calculator1
 from typing import Dict
 from pytest import raises
 
