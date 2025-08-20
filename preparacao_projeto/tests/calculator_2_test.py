@@ -10,7 +10,7 @@ class MockRequest:
   def __init__(self, body: Dict) -> None:
     self.json = body
 
-class MockDriverHandler(DriverHandlerInterface):
+class MockDriverHandler(): # driverHandlerInterface removido para não precisar declarar todas as funçoes abstratas
   def standard_derivation(self, numbers: List[float]) -> float:
     return 3
 
