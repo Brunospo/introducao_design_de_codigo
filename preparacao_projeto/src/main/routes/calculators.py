@@ -16,7 +16,7 @@ def calculator1():
 
   except Exception as exception:
     error_response = handle_errors(exception)
-    return jsonify(error_response["body"]), error_response["status_code"]
+    return jsonify(error_response["errors"]), error_response["status_code"]
 
 @calc_route_bp.route('/calculator/2', methods = ['POST'])
 def calculator2():
@@ -28,7 +28,7 @@ def calculator2():
 
   except Exception as exception:
     error_response = handle_errors(exception)
-    return jsonify(error_response["body"]), error_response["status_code"]
+    return jsonify(error_response["errors"]), error_response["status_code"]
 
 @calc_route_bp.route('/calculator/3', methods = ['POST'])
 def calculator3():
@@ -40,4 +40,4 @@ def calculator3():
 
   except Exception as exception:
     error_response = handle_errors(exception)
-    return jsonify(error_response["body"]), error_response["status_code"]
+    return jsonify(error_response["errors"]), error_response["status_code"]
