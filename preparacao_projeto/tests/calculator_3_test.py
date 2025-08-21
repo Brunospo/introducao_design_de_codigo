@@ -44,7 +44,7 @@ def test_calculate_with_variance_error():
   with raises (Exception) as excinfo:
     calculator_3.calculate(mock_request)
 
-  assert str(excinfo. value) == 'Falha no processo: Variância menor que a multiplicação'
+  assert str(excinfo.value) == 'Falha no processo: Variância menor que a multiplicação'
 
 def test_calculate():
   mock_request = MockRequest({ "numbers": [1, 1, 1, 1, 100] })
